@@ -62,6 +62,57 @@ format:
   - metrics
 ```
 
+- [Modular Autonomy with Conversational Interaction: An LLM-driven Framework for Decision Making in Autonomous Driving](https://arxiv.org/abs/2601.05806)
+  - Marvin Seegert, Korbinian Moller, Johannes Betz
+  - Publisher: Technical University of Munich
+  - Publish Date: 2026.01.09
+  - Task: Planning
+  - Summary：
+    - Proposes an LLM-driven framework for natural language interaction with modular Autonomous Driving Systems (ADS), integrating an LLM-based layer with the Autoware software stack.
+    - Introduces a three-component methodology: a taxonomy of interaction categories, an application-centric Domain Specific Language (DSL) for command translation, and a safety-preserving validation layer.
+    - Employs a two-stage LLM architecture for high transparency and feedback, with evaluation confirming timing efficiency, translation robustness, and successful command execution across all interaction categories in simulation.
+
+- [SGDrive: Scene-to-Goal Hierarchical World Cognition for Autonomous Driving](https://arxiv.org/abs/2601.05640)
+  - Jingyu Li, Junjie Wu, Dongnan Hu, Xiangkai Huang, Bin Sun, Zhihui Hao, Xianpeng Lang, Xiatian Zhu, Li Zhang
+  - Publish Date: 2026.01.09
+  - Task: Planning
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim)
+  - Summary：
+    - Proposes SGDrive, a novel framework that structures a Vision-Language Model's (VLM) representation learning around a driving-specific scene-agent-goal hierarchy to mirror human driving cognition.
+    - Addresses limitations of generalist VLMs by providing structured spatial-temporal representations for capturing geometric relationships, scene context, and motion patterns critical for safe trajectory planning.
+    - Achieves state-of-the-art performance among camera-only methods on the NAVSIM benchmark, validating the effectiveness of hierarchical knowledge structuring for adapting VLMs to autonomous driving.
+
+- [LatentVLA: Efficient Vision-Language Models for Autonomous Driving via Latent Action Prediction](https://arxiv.org/abs/2601.05611)
+  - Chengen Xie, Bin Sun, Tianyu Li, Junjie Wu, Zhihui Hao, XianPeng Lang, Hongyang Li
+  - Publish Date: 2026.01.09
+  - Task: End-to-End
+  - Datasets: [NAVSIM](https://github.com/autonomousvision/navsim), [nuScenes](https://www.nuscenes.org/)
+  - Summary：
+    - LatentVLA, a novel framework using self-supervised latent action prediction to train Vision-Language-Action (VLA) models without language annotations, eliminating linguistic bias.
+    - It learns rich driving representations from unlabeled trajectory data and transfers VLA generalization to efficient vision-based networks via knowledge distillation for robust, real-time performance.
+    - Achieves state-of-the-art on NAVSIM (PDMS: 92.4) and demonstrates strong zero-shot generalization on nuScenes.
+
+- [ThinkDrive: Chain-of-Thought Guided Progressive Reinforcement Learning Fine-Tuning for Autonomous Driving](https://arxiv.org/abs/2601.04714)
+  - Chang Zhao, Zheming Yang, Yunqing Hu, Qi Guo, Zijian Wang, Pengcheng Li, Wen Ji
+  - Publish Date: 2026.01.08
+  - Task: Planning
+  - Summary：
+    - ThinkDrive, a Chain-of-Thought (CoT) guided progressive reinforcement learning fine-tuning framework for autonomous driving that synergizes explicit reasoning with difficulty-aware adaptive policy optimization.
+    - Employs a two-stage training strategy: supervised fine-tuning using CoT explanations, followed by progressive RL with a difficulty-aware adaptive policy optimizer that adjusts learning intensity based on sample complexity.
+    - Outperforms strong RL baselines on key metrics and shows a 2B-parameter model trained with this method surpasses the larger GPT-4o by 3.28% on the exam metric.
+
+- [UniDrive-WM: Unified Understanding, Planning and Generation World Model For Autonomous Driving](https://arxiv.org/abs/2601.04453)
+  - Zhexiao Xiong, Xin Ye, Burhan Yaman, Sheng Cheng, Yiren Lu, Jingru Luo, Nathan Jacobs, Liu Ren
+  - Publisher: Washington University in St. Louis, Bosch Research
+  - Publish Date: 2026.01.07
+  - Project Page: [UniDrive-WM](https://unidrive-wm.github.io/UniDrive-WM)
+  - Task: Planning
+  - Datasets: [Bench2Drive](https://bench2drive.github.io/)
+  - Summary：
+    - UniDrive-WM, a unified VLM-based world model that jointly performs driving-scene understanding, trajectory planning, and trajectory-conditioned future image generation within a single architecture.
+    - The model's trajectory planner predicts a future trajectory, which conditions a VLM-based image generator to produce plausible future frames, providing supervisory signals that enhance understanding and refine trajectory generation.
+    - Experiments on Bench2Drive show UniDrive-WM improves planning performance by 5.9% in L2 trajectory error and 9.2% in collision rate over the previous best method, demonstrating the advantages of tightly integrating VLM-driven reasoning, planning, and generative world modeling.
+
 - [WAM-Flow: Parallel Coarse-to-Fine Motion Planning via Discrete Flow Matching for Autonomous Driving](https://arxiv.org/abs/2512.06112)
   - Yifang Xu, Jiahao Cui, Feipeng Cai, Zhihao Zhu, Hanlin Shang, Shan Luan, Mingwang Xu, Neng Zhang, Yaoyi Li, Jia Cai, Siyu Zhu
   - Publisher: Fudan University, Yinwang
